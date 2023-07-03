@@ -3,50 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Jessie Shockey | Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Jessie Shockey</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
+        <h1 class="headd">Jessie Shockey</h1>
+        <nav >
+            <ul class="nav-bar">
                 <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
-        <section class="about">
-            <article>
-            <h2>About Me</h2>
-            <!-- <img src="" alt="Jessie Shockey web developer"> PROFILE PICTURE WILL GO HERE!!-->
-            <p>My name is Jessie Shockey and I am a full stack web developer. I come from a background in the Behavioral Health, Mental Health, and Substance Abuse as a Billing 
+        <section >
+            <article id="about">
+                <h2>About Me</h2>
+                <img src="./assets/images/placeholder-profile-pic.png" alt="Jessie Shockey web developer"> 
+                <p>My name is Jessie Shockey and I am a full stack web developer. I come from a background in the Behavioral Health, Mental Health, and Substance Abuse as a Billing 
                 and Collections Specialist.<br>During my career I also worked as a Software Support Specialist for an Electronic Health Record platform, 
                 where I found that developers often lacked the nuanced knowledge of commercial and government insurance billing requirements. This lack of knowledge led to 
-                gaps within the software's functionality to facilitate a more streamlined billing experience for agencies.
+                gaps within the software's functionality.
                 <br>My professional goal is to help bridge that functional gap between agencies and their Revenue Cycle Managment software, to create more flexible billing process
                 which accommodates the ever changing billing requirements that agnecies face.
-            </p>
+                </p>
             </article>
         </section>
-        <section class="projects">
+        <section >  
             <article>
-            <h2>Projects</h2>
-            <ul>
-                <li>Project #1</li>
-                <li>Project #2</li>
-                <li>Project #3</li>
-            </ul>
+            <h2>Projects</h2>         
+                <ul id="projects">
+                    <li id="first-project">
+                        <a href="https://shockeyj9.github.io/prework-study-guide/">
+                            <img src="./assets/images/Prework Study Guide.png" alt="prework study guide">
+                    </a><p>Study Guide</p></li>
+
+                    <li><a href="#">
+                        <img src="./assets/images/coming-soon.png" alt="coming soon">
+                    </a><p>Project #2</p></li>
+
+                </ul>
             </article>
         </section>
-        <section class="contact">
+        <section>
+
             <article>
-            <h2>Contact Me</h2>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jessie-shockey-077676140/">Jessie Shockey</a></p>
-            <P>Email: <a href="mailto:shockeyjessie92@gmail.com">shockeyjessie92@gmail.com</a></P>
-            <p>Phone: xxx-xxx-xxxx</p> <!--Google Voice #-->
+            <h2>Contact Me</h2>  
+            <div id="contact">
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/jessie-shockey-077676140/">Jessie Shockey</a></p>
+                <P>Email: <a href="mailto:shockeyjessie92@gmail.com">shockeyjessie92@gmail.com</a></P>
+                <p>Phone: <span>(720) 961-3970</span></p> <!--Google Voice #-->
+            </div>          
+
             </article>
         </section>
     </main>
