@@ -6,7 +6,7 @@ This portfolio webpage illustrates an About Me section, as well as linked projec
 
 During the process of this assignment I learned how to consolidate CSS code to be more concise, as well as practicing the github workflow.
 
-This webpage has been deployed at: ![Application URL](https://shockeyj9.github.io/Professional-Portfolio/)
+This webpage has been deployed at: https://shockeyj9.github.io/Professional-Portfolio/
 
 
 ## Installation
