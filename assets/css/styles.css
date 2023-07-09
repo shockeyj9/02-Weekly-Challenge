@@ -8,110 +8,97 @@ body {
 
 /* Transparent text boxes */
 article, header{
-    background-color: rgba(216, 220, 223, 0.548);
+    background-color: rgba(216, 220, 223, 0.632);
     margin: 2% 2%;
     padding: 2% 2%;
 
 }
+/* paragraph formatting  */
 p{
-    padding: 2% 5%;
+    padding: 1% 3%;
     font-size: 18px;
 }
-
-/* header{
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); 
-} */
-
+/* sets flex for header elements so they're aligned */
 header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-}
-
-h1{
+    align-items: center;
     font-size: 35px;
 }
 
-/* Thank you W3Schools for the Responsive Topnav Example: 
-https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive */
-
-
-/* Removes bullets from li elements */
-.nav-bar {
-    list-style-type: none;
-}
-ul{
+/* formatting navigation bar to be horizontal */
+nav ul{
     display: flex;
-    flex-direction: row;
+    list-style-type: none;
+    font-size: 22px;
 }
 
-/* puts nav bar on the right hand side */
- .nav-bar li {
-    font-size: 20px;
-}
-
-/* lines the options horizontally, centers the text and changes color to black */
+/* removes normal anchor formatting */
 .nav-bar li a{
-    display: block;
-    text-align: center;
     padding: 14px 16px;
     text-decoration:none;
     color: black;
 } 
+/* Adds an underline to navbar options when hovering */
 .nav-bar li a:hover{
     text-decoration:underline;
 } 
-
+/* Aligns h2 text, adds padding and sets font size */
 h2{
     text-align: center;
     padding: 8px 16px;
     font-size: 25px;
 }
-
+/* Setting margins and making it so content doesn't go outside of container */
 #about{
 margin-top: 4%;
 contain: content;
 }
-
+/* About me image formatting to keep it on the left and so it resizes with the page */
 #about img{
     float: left;
-    padding: 2% 1%;
-    width: 40%;
-    height: 40%;
+    padding: 1% 2%;
+    width: 20%;
+    height: 25%;
 }
-
-#projects{
-    display: grid;
+/* Setting flex to wrap around when page is being resized */
+#projects, #contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-align: center;
-    grid-template-columns: 1fr 1fr;
+    contain: content;
+    padding: 2% 1%;
 }
+/* Image sizing */
 #projects img{
     width: 75%;
     height: 75%;
 }
-
+/* On hover image changes to be blurry */
 #projects a:hover{
 cursor: pointer;
 opacity: 0.75;
 filter:blur(1px);
-
-
 }
-#first-project{
-    grid-column: span 2;
-}
+/* Image formatting so first project picture is always larger than the rest */
 #first-project img{
     width: 90%;
     height: 90%;
 }
-
-#contact {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); 
-    text-align: center;
+/* Project languages size change */
+span{
+    font-size: 65%;
 }
+/* Creates a floating Project title box over the projects image */
+#projects li p{
+    background-color: rgba(155, 197, 197, 0.962);
+    position: relative;
+    width: 22%;
+    bottom: 20%;
+    left: 5%;
+}
+/* Sets footer formatting to be darker than the rest of the webpage*/
 footer{
     text-align: center;
     color: black;
@@ -119,28 +106,27 @@ footer{
     margin: 2%;
 
 }
+/* Sets footer hyperlinks to black text */
 footer a{
     color: black;
 }
-
+/* Media query to adjust for smaller screens */
 @media screen and (max-width: 730px) {
     header{ flex-direction: column;
         align-items: center;
         align-content: center;}
-    ul{
-        flex-direction: column;}
+    nav ul{
+        flex-direction: column;
+    }
     h1 { text-align: center;}
-    .nav-bar li{float: none;}
-    #projects {
-        display: block;}
-    #projects img{
-        width: 45%;
-        height: 45%;}
+    .nav-bar li{float: none;
+        padding: 14px 16px;}
     #first-project img{
         width: 90%;
         height: 90%;}
-    #contact p{
-        text-align: center;
+    #contact{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
